@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DarkAlertDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">#161B22</item>
+        <item name="android:textColor">#E6EDF3</item>
+        <item name="colorAccent">#58A6FF</item>
+    </style>
+</resources>

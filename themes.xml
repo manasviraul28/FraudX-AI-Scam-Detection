@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FraudX" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">#0D1117</item>
+        <item name="colorPrimaryDark">#0D1117</item>
+        <item name="colorAccent">#58A6FF</item>
+        <item name="android:windowBackground">#0D1117</item>
+        <item name="actionBarStyle">@style/DarkActionBar</item>
+        <item name="android:actionBarStyle">@style/DarkActionBar</item>
+    </style>
+
+    <style name="DarkActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">#161B22</item>
+        <item name="titleTextStyle">@style/DarkActionBarTitle</item>
+    </style>
+
+    <style name="DarkActionBarTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#E6EDF3</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

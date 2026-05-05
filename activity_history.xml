@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#0D1117"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- SOS Section -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#161B22"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="🆘 Emergency SOS"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#E6EDF3"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Tap to instantly call fraud helpline"
+            android:textSize="12sp"
+            android:textColor="#8B949E"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnSOS"
+            android:text="📞 CALL 1930 — Cyber Crime Helpline"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF4444"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnSOS112"
+            android:text="🆘 CALL 112 — National Emergency"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#CC3300"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+
+    </LinearLayout>
+
+    <!-- News Header -->
+    <TextView
+        android:text="📰 Daily Cyber Crime Alerts"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#E6EDF3"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Latest scam news updated daily"
+        android:textSize="12sp"
+        android:textColor="#8B949E"
+        android:paddingStart="16dp"
+        android:paddingBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Loading -->
+    <ProgressBar
+        android:id="@+id/progressNews"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Error -->
+    <TextView
+        android:id="@+id/tvNewsError"
+        android:visibility="gone"
+        android:textSize="13sp"
+        android:textColor="#8B949E"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- News List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerNews"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

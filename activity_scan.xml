@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1117">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="What do you want to scan?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#E6EDF3"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Paste a phone number, SMS text, or UPI payment link"
+            android:textSize="13sp"
+            android:textColor="#8B949E"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etInput"
+            android:hint="e.g. +91-9876543210  or  upi://pay?pa=abc@ybl"
+            android:textColor="#E6EDF3"
+            android:textColorHint="#484F58"
+            android:background="@drawable/input_bg"
+            android:padding="14dp"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:maxLines="8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"/>
+
+        <Button
+            android:id="@+id/btnScan"
+            android:text="Run AI Scan"
+            android:textSize="15sp"
+            android:textColor="#0D1117"
+            android:backgroundTint="#58A6FF"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Result"
+                android:textSize="12sp"
+                android:textColor="#8B949E"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:text="Awaiting scan..."
+                android:textSize="16sp"
+                android:textColor="#484F58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

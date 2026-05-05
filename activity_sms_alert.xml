@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#CC000000"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="📩 FraudX SMS Alert"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#E6EDF3"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvSender"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#58A6FF"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvBody"
+            android:textSize="13sp"
+            android:textColor="#C9D1D9"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvRisk"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnBlock"
+            android:text="🚫 Block This Number"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF4444"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnDismiss"
+            android:text="Dismiss"
+            android:backgroundTint="#58A6FF"
+            android:textColor="#0D1117"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+
+    </LinearLayout>
+</LinearLayout>
